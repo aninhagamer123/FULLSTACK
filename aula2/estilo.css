@@ -1,0 +1,176 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f3f3;  /* fundo claro */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    flex: 1;  /* para o footer ficar sempre embaixo */
+}
+
+/*  MENU (seletor por TAG)  */
+menu {
+    background-color: #ffb6c1; 
+    padding: 15px 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* sombra suave */
+}
+
+menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Links do menu - seletor por TAG + seletor descendente */
+.menu ul li a {
+    text-decoration: none;
+    color: #4a2c2c;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 3px 10px;
+    border-radius: 30px;
+    transition: all 0.3s ease;  /* transição suave para o hover */
+}
+
+/* PSEUDO-CLASSE :hover */
+.menu ul li a:hover {
+    background-color: #ffe4e9;
+    color: #c06c7a;
+    transform: scale(1.05);  /* aumenta levemente */
+    box-shadow: 0 2px 8px rgba(255, 105, 135, 0.4);
+}
+
+/* Classe .ativo para indicar a página atual */
+.menu ul li a.ativo {
+    background-color: #ffe4e9;
+    color: #b35d6b;
+    border-bottom: 3px solid #b35d6b;
+}
+
+/*  TÍTULOS  */
+/* Seletor por ID é quando no html esta em ID ai no CSS é # */
+#titulo-principal {
+    color: #d803aa;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px dashed #ffb6c1;
+    padding-bottom: 10px;
+}
+
+/* Seletor por classe */
+.subtitulo {
+    color: #9b5a5a;
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+    padding-left: 10px;
+    border-left: 6px solid #ffb6c1;
+}
+
+/* CARDS = apresentaçao (seletor por classe) */ 
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    margin: 25px 0;
+    border: 1px solid #ffe0e5;
+    transition: transform 0.2s;
+}
+
+/* Pseudo-classe hover no card */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 150, 170, 0.15);
+}
+
+/* IMAGEM DESTAQUE */
+.imagem-destaque {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.imagem-destaque img {
+    max-width: 100%;
+    border-radius: 40px;
+    box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.2);
+    border: 4px solid white;
+}
+
+/* TABELA (seletor por TAG e CLASSE) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(243, 171, 227);
+    border-radius: 20px;
+    overflow: hidden;  /* para respeitar o border-radius */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    margin: 20px 0;
+}
+
+th {
+    background-color: #fa7d90;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffe0e5;
+}
+
+/* Pseudo-classe hover na linha da tabela */
+tbody tr:hover {
+    background-color: #c76bb3;
+}
+
+/* Estilo para o link dentro da tabela */
+.fullstack {
+    text-decoration: none;
+    background-color: #c56172;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+/* Hover no link do projeto */
+.fullstack:hover {
+    background-color: #b9298e;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* AVISO */
+.aviso {
+    background-color: #fff1d6;
+    border-left: 6px solid #ffae42;
+    padding: 15px;
+    border-radius: 15px;
+    font-style: italic;
+    color: #7a4d1a;
+}
+
+/* RODAPÉ (seletor por TAG) */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #7a6a6a;
+    font-size: 0.9rem;
+    border-top: 2px solid #ffd9df;
+}
