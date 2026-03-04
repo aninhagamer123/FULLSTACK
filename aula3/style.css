@@ -1,0 +1,198 @@
+body {
+    font-family: 'Arial, sans-serif' ;
+    background-color: rgba(255, 255, 255, 0.836);
+    /* margin:5px; */
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0 20px 0; /* Ajuste das margens */
+    width: 100%;
+    padding: 10px;
+    color: black;
+    font-size: 24px;
+    font-family: 'Arial, sans-serif';
+}
+
+/* Título específico para Livros - subindo um pouco */
+.titulo-livros {
+    margin-top: 20px;  /* Reduzido para subir */
+    margin-bottom: 20px;
+}
+
+/* PARÁGRAFOS */
+.p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: purple;
+    font-family: "sanserif";
+    font-size: 20pt;
+}
+
+/* TOPO DA PÁGINA */
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid blue;
+    background-color: bisque;
+    font-family: Georgia;
+    font-size: 40px;
+}
+
+.titulo-principal {
+    font-size: 48px;
+    font-size: sans-serif;
+    color: green;
+    font-size: bold; /* revisar */
+}
+
+/* MENU  caixa de texto*/ 
+.menu {
+     background-color: #799ae0;
+     padding: 10px 0;
+     text-align: center;
+     font-family: sans-serif;
+     border-radius: blue;
+}
+
+/* MENU  caixa de texto da parte azul*/ 
+.menu a {
+    color: #570505;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.conteudo {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.livros {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens */
+    gap: 50px; /* Espaço entre as imagens */
+    margin: 30px 0;
+    flex-wrap: wrap; /* Para responsividade */
+}
+
+.livro-item {
+    text-align: center;
+    width: 250px; /* Largura fixa para cada item */
+}
+
+/* ESTILO DAS IMAGENS - REMOVIDO O POSITION ABSOLUTE */
+img#A, img#C, img#java {
+    width: 200px;  /* Largura fixa */
+    height: 250px; /* Altura fixa */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative; /* Mudado de absolute para relative */
+    top: 0; /* Reset da posição */
+    left: 0; /* Reset da posição */
+    display: block;
+    margin: 0 auto 10px auto; /* Centraliza a imagem */
+}
+
+.iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin: 30px 0;
+
+}
+
+table, th,tr,td{
+    margin-left: auto;
+    margin-right: auto;
+    border-color:red;
+    border-style: dashed;
+}
+
+th{
+    background-color: #e0e0e0;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 16px;
+    border-color: red;
+}
+
+td{
+    padding: 10px 15px;
+    border: 1px solid #999;
+    border-color: red;
+}
+
+tr{
+    padding: 10px 15px;
+    border: 1px solid #999;
+    height: 20px;
+    width: 100px;
+}
+
+.consulta{
+      display: block;
+      background-color: yellow;
+      width: 38%;
+      height: auto;
+      margin: auto;
+}
+
+.links{
+    text-align: left;
+}
+
+ .consulta a{
+    color: purple;
+    text-align: center;
+    text-align: left;
+    
+} 
+
+.espacoLink{
+    padding-left: 175px;
+}
+
+.borda{
+    background: bisque;
+    height: 100px;
+    position: relative;
+}
+#css{
+   position: absolute;
+   left: 20px;
+   top: 15px;
+   height: 80px; 
+}
+
+#html{
+    position: absolute;
+   right:20px;
+   top: 15px;
+   height: 80px; 
+}
+
+.texto{
+       text-align: center;
+       padding-top: 30px;
+       font-family: "comic sans ms";
+       font-size: 15pt;
+}
+
+.paragrafo{
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: indigo;
+    font-size: 20pt;
+}
