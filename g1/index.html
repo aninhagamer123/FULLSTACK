@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Faz o site se adaptar a celulares e telas menores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Clone G1</title>
+    <!-- Conecta o arquivo CSS externo que estiliza o site -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <!-- a é para LINKS -->
+    <div class="barra-globo">
+        <a class="globo" href="https://www.globo.com/">globo.com</a>
+        <a class="g1link" href="https://g1.globo.com/">g1</a>
+        <a class="ge" href="https://ge.globo.com/">ge</a>
+        <a class="gshow" href="https://gshow.globo.com/">gshow</a>
+        <a class="globoplay" href="https://globoplay.globo.com/">globoplay</a>
+        <a class="g1jogos" href="https://g1.globo.com/jogos/">g1 jogos</a>
+        <a class="oglobo" href="https://oglobo.globo.com/">o globo</a>
+        <a class="valor" href="https://valor.globo.com/">valor</a>
+    </div>
+
+    <!-- BARRA VERMELHA -->
+    <header class="topo-g1">
+
+    <!-- ÁREA DO BOTÃO MENU -->
+        <div class="menu"> <!-- Container do botão menu -->
+            <a href="#" class="menu_item"> <!-- Link clicável do menu, mas como não tem JS vai só de estetica -->
+                <img src="menu_img.png" alt="Menu"><!-- Ícone do menu (imagem) -->
+                <span>MENU</span><!-- Texto do botão menu -->
+            </a>
+        </div>
+
+        <!-- LOGO DO G1 -->
+        <div class="logo">
+            g1
+        </div>
+
+        <!-- ÁREA DE AÇÕES (BUSCAR E LOGIN) -->
+        <div class="acoes"> <!-- Container das ações do usuário -->
+
+            <!-- BOTÃO DE BUSCA -->
+            <div class="buscar">
+                <a href="#" class="buscar_item">
+                    <img src="lupa.png" alt="Lupa">
+                    <span>BUSCAR</span>
+                </a>
+            </div>
+
+            <!-- BOTÃO DE LOGIN -->
+            <div class="login">
+                <a href="#" class="login_item">
+                    <img src="login.png" alt="Login">
+                    <span>Entrar com a Conta Globo</span>
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <section class="noticias">
+        <a class="noticia-principal"
+            href="https://g1.globo.com/mundo/noticia/2026/03/07/israel-diz-ter-controle-do-espaco-aereo-de-teera-e-promete-nova-onda-de-ataques.ghtml">
+
+            <p class="titulo">Guerra no Oriente Médio</p>
+
+            <h1>
+                Israel diz ter controle 'quase total' do espaço aéreo de Teerã
+                e promete mais ataques
+            </h1>
+
+            <ul>
+                <li>Trump faz novas ameaças e chama Irã de 'perdedor do Oriente Médio'</li>
+                <li>INFOGRÁFICOS: sem sinal de cessar-fogo: a 1ª semana de guerra</li>
+            </ul>
+        </a>
+
+        <!-- NOTICIAS AO LADO DIREITO-->
+        <div class="noticias-lateriais">
+            <a class="noticia-card"
+                href="https://g1.globo.com/mundo/noticia/2026/03/07/como-ira-criou-drones-suicidas-de-baixo-custo-para-provocar-caos-no-oriente-medio.ghtml">
+                <img src="drone.png">
+                <h3>Como Irã criou drones 'suicidas' de baixo custo e difíceis de detectar</h3>
+            </a>
+            <br>
+            <a class="noticia-card"
+                href="https://g1.globo.com/sp/sorocaba-jundiai/noticia/2026/03/07/video-mulher-se-agarra-a-poste-para-nao-ser-levada-por-enxurrada-durante-temporal-em-sorocaba-e-e-socorrida.ghtml">
+                <img src="enchente.png">
+                <h3>VÍDEO: mulher se agarra a poste durante enxurrada em Sorocaba</h3>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>

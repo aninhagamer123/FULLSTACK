@@ -1,0 +1,246 @@
+/* RESET */
+
+*{
+margin:0; /* remove margens padrão do navegador */
+padding:0; /* remove espaçamento interno padrão */
+box-sizing:border-box; /* faz largura e altura incluírem padding e borda */
+}
+
+/* BARRA SUPERIOR */
+
+/* seleciona o container da barra superior do site */
+.barra-globo{
+background:white; /* define cor de fundo branca */
+padding:10px 20px; /* espaço interno 10 para cima e baixo e 20 esquerda e direita */
+font-size:14px; /* tamanho da fonte */
+font-family: Arial, Helvetica, sans-serif; /* define a família da fonte */
+}
+
+/* seleciona todos os links dentro da barra-globo */
+.barra-globo a{
+margin-right:15px; /* espaço entre os links */
+text-decoration:none; /* remove o sublinhado padrão dos links */
+font-weight:bold; /* deixa o texto em negrito */
+}
+
+/* cores links */
+.globo{color:#0669de;}
+.g1link{color:#c4170c;}
+.ge{color:#06aa48;}
+.gshow{color:#ff6700;}
+.globoplay{color:#fb0334;}
+.oglobo{color:#1e4c9a;}
+.g1jogos{color:darkblue}
+.valor{color:#006766;}
+
+
+/* BARRA VERMELHA */
+
+/* cabeçalho principal do site */
+.topo-g1{
+background:#c4170c; /* cor vermelha da barra */
+color:white; /* define texto branco para todos elementos dentro */
+display:flex; /* ativa FLEXBOX para organizar os elementos */
+align-items:center; /* centraliza os elementos verticalmente */
+justify-content:space-between; /* cria espaço entre os elementos (menu | logo | ações) */
+padding:15px 40px; /* espaço interno da barra */
+width:100%; /* ocupa toda a largura da tela */
+font-family:Arial, Helvetica, sans-serif;
+position:relative; /* necessário para posicionar elementos com position:absolute dentro dele */
+}
+
+/* MENU */
+
+/* estilo do link do menu */
+.menu_item{
+display:flex; /* coloca ícone e texto lado a lado */
+align-items:center; /* alinha verticalmente */  
+gap:8px; /* espaço entre o ícone e o texto */
+text-decoration:none; /* remove sublinhado do link */
+color:white; /* cor do texto */
+font-weight:bold; /* texto em negrito */
+font-size:16px; /* tamanho da fonte */
+}
+
+/* seleciona a imagem dentro do menu */
+.menu_item img{
+height:25px; /* altura da imagem do ícone */
+}
+
+/* LOGO */
+
+.logo{
+font-size:42px; /* tamanho grande do logo */
+font-weight:bold; /* deixa o texto em negrito */
+position:absolute; /* permite posicionar o logo livremente */
+left:50%; /* move o logo para metade da tela */
+transform:translateX(-50%); /* move metade do próprio tamanho para esquerda isso centraliza perfeitamente o logo */
+}
+
+/* AÇÕES */
+
+/* container dos botões buscar e login */
+.acoes{
+display:flex; /* coloca os botões lado a lado */
+gap:15px; /* espaço entre os botões */
+}
+
+/* caixa do botão buscar */
+.buscar{
+background:#a7140c; /* fundo vermelho escuro */
+color:white; /* texto branco */
+padding:1px 20px; /* espaço interno */
+border-radius:10px; /* deixa cantos arredondados */
+}
+
+/* estilo do link dentro do botão buscar */
+.buscar_item{
+    font-weight: bold; /* texto em negrito */
+    font-size: 13px; /* tamanho da fonte */
+    background:#a7140c; /* mesma cor de fundo do botão */
+    color: white; /* cor do texto */
+    display: flex; /* alinha ícone e texto lado a lado */
+    align-items: center; /* centraliza verticalmente */
+    text-decoration: none; /* TIRAR SUBLINHADO DA PALAVRA MENU*/
+}
+
+/* imagem da lupa */
+.buscar_item img{
+    width:25px; /* largura do ícone */
+    margin-bottom:5px; /* pequeno ajuste de alinhamento */
+}
+
+/* caixa do botão login */
+.login{
+background:#a7140c; /* fundo vermelho escuro */
+color:white; /* texto branco */
+padding:1px 30px; /* espaço interno */
+border-radius:10px; /* cantos arredondados */
+}
+
+
+/* link do login */
+.login_item{
+    font-weight: bold;
+    font-size: 13px;
+    background:#a7140c;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* TIRAR SUBLINHADO DA PALAVRA MENU*/
+}
+
+.login_item img{
+    width: 25px;
+    margin-bottom:5px;
+}
+
+
+/* CONTEÚDO */
+
+.noticias{
+padding:40px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.noticia-principal{
+color:#c4170c;
+font-weight:bold;
+font-size:20px;
+}
+
+/* RESPONSIVO */
+
+/* regras aplicadas quando a tela for menor que 768px */
+@media (max-width:768px){
+
+.logo{
+font-size:32px; /* diminui o tamanho do logo */
+}
+
+.buscar{
+display:none; /* esconde o botão buscar em telas menores */
+}
+
+}
+
+/* regras aplicadas quando a tela for menor que 480px */
+@media (max-width:480px){
+
+.menu_item span{
+display:none; /* esconde o texto MENU e deixa só o ícone */
+}
+
+.login{
+padding:8px 12px; /* reduz tamanho do botão login */
+font-size:12px; /* reduz tamanho do texto */
+}
+
+}
+
+/* NOTICIAS GERAIS */
+.noticias{
+max-width:1200px; /* largura máxima da área de notícias */
+margin:40px auto; /* centraliza a seção horizontalmente */
+display:grid; /* ativa CSS GRID para layout */
+grid-template-columns: 2fr 1fr; /* cria duas colunas 2 maior e 1 menor */
+gap:25px; /* espaço entre as colunas */
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* noticia principal */
+
+.noticia-principal{
+text-decoration:none; /* remove sublinhado do link */
+color:inherit; /* herda cor do elemento pai */
+display:block; /* faz o link ocupar toda área */
+background:#f5f5f5; /* fundo cinza claro */
+padding:30px; /* espaço interno */
+border-radius:10px; /* cantos arredondados */
+} 
+
+.noticia-principal h1{
+color:#c4170c;
+font-size:38px;
+margin:15px 0; /* espaço acima e abaixo */
+}
+
+.noticia-principal ul{
+margin-top:15px; /* espaço acima da lista */
+padding-left:20px; /* espaço para os marcadores da lista */
+}
+
+.noticia-principal li{
+margin-bottom:10px; 
+}
+
+/* lado direito */
+
+.noticias-laterais{
+display:flex; /* organiza os cards verticalmente */
+flex-direction:column; /* empilha os elementos em coluna */
+gap:20px; /* espaço entre os cards */
+}
+
+.noticia-card{
+text-decoration:none;
+color:inherit;
+display:block;
+position:relative; /* permite posicionar elementos dentro dele */
+overflow:hidden; /* esconde partes da imagem que saírem do card */
+border-radius:10px;
+}
+
+.noticia-card img{
+width:100%;
+display:block;
+}
+
+.noticia-card h3{
+position:absolute;
+bottom:10px;
+left:15px;
+right:15px;
+color:white;
+font-size:18px;
+}
