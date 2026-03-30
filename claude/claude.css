@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+}
+
+/* NAV */
+.navegacao {
+    background: darkblue;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.navegacao a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.navegacao a:hover {
+    text-decoration: underline;
+}
+
+/* HEADER */
+.topo {
+    background-color: darkred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    width: 100%;
+}
+
+.topo h3 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.headerdireita {
+    display: flex;
+    gap: 15px;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #a7140c;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #a7140c;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.headerdireita h6 {
+    color: white;
+    font-size: 14px;
+}
+
+/* CONTATO */
+.contato {
+    background: darkgrey;
+    padding: 10px 20px;
+}
+
+.contato a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+/* DESTAQUE */
+.destaquedodia {
+    font-size: 30px;
+    color: darkred;
+    margin: 15px 20px;
+}
+
+/* NOTICIAS PRINCIPAIS */
+.noticias {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.noticiaesquerda {
+    width: 50%;
+    position: relative;
+}
+
+.noticiaesquerda img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+
+.coluna-direita {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.noticiadireita {
+    width: 100%;
+    position: relative;
+}
+
+.noticiadireita img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+   border-style: solid;
+}
+
+.imagemcomtexto {
+    position: relative;
+}
+
+.textoimagem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.textoimagem h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.categoria {
+    font-size: 11px;
+    color: red;
+    margin-bottom: 5px;
+}
+
+/* NOTICIAS SECUNDARIAS */
+.noticias-secundarias {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* COLUNA ESQUERDA */
+.lista-noticias {
+    width: 65%;
+    display: flex;
+    flex-direction: column;  /* noticias uma abaixo da outra */
+    gap: 5px;
+}
+
+.noticia-lista {
+    display: flex;
+    flex-direction: row;     /* imagem e texto lado a lado */
+    gap: 15px;
+    padding: 15px 0;
+    align-items: flex-start;
+    width: 100%;             /* ocupa toda a coluna */
+}
+
+.noticia-lista img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.noticia-lista-texto {
+    flex: 1;
+    font-size: 13px;
+    color: black;
+}
+
+.noticia-lista-texto h3 {
+    font-size: 15px;
+    margin: 5px 0;
+    color: black;
+}
+
+.categoria-lista {
+    font-size: 11px;
+    color: #c4170c;
+    font-weight: bold;
+}
+
+.tempo {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 20px;
+}
+
+.footer{
+    background: darkblue;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.rodapesquerdo{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.rodapedireito{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    padding-left: 70%;
+}
