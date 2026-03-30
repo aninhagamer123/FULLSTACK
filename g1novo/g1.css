@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: white;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+nav a {
+    margin-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.globo{color:#0669de;}
+.g1link{color:#c4170c;}
+.ge{color:#06aa48;}
+.gshow{color:#ff6700;}
+.globoplay{color:#fb0334;}
+.oglobo{color:#1e4c9a;}
+.g1jogos{color:darkblue}
+.valor{color:#006766;}
+
+.topog1 {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    width: 100%;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 50px;
+    font-style: arial;  
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;        
+    align-items: center;  
+    gap: 8px;            
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.headerdireita {
+    display: flex;
+    gap: 15px;
+}
+
+.buscar{
+    display: flex;        
+    align-items: center;  
+    gap: 8px;             
+    background: #a7140c;
+    color: white;
+    padding: 8px 20px;   
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.headerdireita span{
+    color: white;
+    font-size: 14px;
+}
+
+.login{
+    display: flex;        
+    align-items: center;  
+    gap: 8px;             
+    background: #a7140c;
+    color: white;
+    padding: 8px 20px;   
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.noticias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 45px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.noticiaesquerda {
+    font-weight: bold;
+    font-size: 20px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    align-self: stretch;
+}
+
+.tituloprincipal {
+    color: red;
+    font-size: 45px;
+}
+
+.subtituloprincipal {
+    font-size: 25px;
+    font-weight: normal;
+    color: black;
+    margin-top: 10px;
+}
+
+.coluna-direita {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.noticiadireita {
+    width: 100%;
+}
+
+.imagemcomtexto {
+    position: relative;
+}
+
+.imagemcomtexto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.textoimagem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+}
+
+.textoimagem h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.categoria {
+    font-size: 11px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.noticias-secundarias {
+    display: flex;
+    gap: 20px;
+    padding: 20px 45px;
+}
+
+/* COLUNA ESQUERDA */
+.lista-noticias {
+    width: 65%;
+}
+
+.noticia-lista {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    align-items: flex-start;
+}
+
+.noticia-lista img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.noticia-lista-texto {
+    flex: 1;
+}
+
+.noticia-lista-texto h3 {
+    font-size: 15px;
+    margin: 5px 0;
+    color: black;
+}
+
+.categoria-lista {
+    font-size: 11px;
+    color: #c4170c;
+    font-weight: bold;
+}
+
+.noticia-lista-texto ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
+.noticia-lista-texto ul li a {
+    color: #c4170c;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.tempo {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* COLUNA DIREITA */
+.viu-isso {
+    width: 35%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.viu-isso h3 {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.viu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.viu-item p {
+    font-size: 13px;
+    color: black;
+    flex: 1;
+}
+
+.viu-item img {
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.mais-conteudo {
+    display: block;
+    text-align: center;
+    color: #c4170c;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.footer{
+    background: red;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.footer p{
+    color: white;
+    font-size: 15px;
+    font-style: arial;  
+    font-weight: bold;
+    text-align: center;
+}
