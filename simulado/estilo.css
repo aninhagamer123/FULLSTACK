@@ -1,0 +1,212 @@
+nav{
+    display: flex; /* lado a lado */
+    gap: 20px; /* espaco entre links */
+    padding: 10px 20px; /*espaco interno*/
+    align-items: center; /*alinha vertical*/
+    border-bottom: 1px solid;
+    border-color: #ccc;
+}
+
+nav a{
+    text-decoration: none; /* tira o sublinhado */
+    color: black;
+    font-size: 18px;;
+}
+
+nav a.Assine{
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid;
+    border-color: #ccc;
+}
+
+.headerdireita{
+      text-align: right;
+}
+
+.headerdireita p {
+      font-size: 15px;
+      color: black;
+      margin: 0;
+      border-bottom: 1px solid;
+      padding-bottom: 10px;
+}    
+
+.redes{
+    display: flex;
+    gap: 15px; /* espaco entre links */
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.redes a{
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.tituloprincipal{
+    color: red;
+    font-size: 30px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.noticias{
+     display: flex;
+    padding: 0px 20px 20px 20px;
+    gap: 15px;
+}
+
+.noticiaesquerda{
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.carro.png{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.legendaprincipal{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.legendaprincipal p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.noticiamorena{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mulhermorena.png{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.legendamorena {
+    padding: 10px;
+    margin: 0px;
+    font-size: 15px;
+    color: gray;
+}
+
+.legendamorena h2{
+    color: red;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.legendamorena h3{
+    border-top: 1px solid;
+    border-color: #ccc;
+    padding-top: 10px;
+    color: red;
+    font-size: 14px;
+    margin: 0;
+}
+
+.legendamorena p {
+    margin: 0 0 10px 0;
+}
+
+.noticialoira{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mulherloira.png{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.legendaloira{
+    padding: 10px 0;
+    font-size: 13px;
+    color: gray;
+}
+
+.legendaloira h2{
+    color: red;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.legendaloira p {
+    margin: 0 0 10px 0;
+}
+
+.legendaloira h3{
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    color: red;
+    font-size: 14px;
+    margin: 0;
+}
+
+.correioplay{
+    background-color: gray;
+    margin: 0 0 5px 0;
+    padding: 10px;
+}
+
+.correioplay p{
+    font-size: 25px;
+    color: white;
+}
+ .correioplay iframe{
+    display: block;
+    margin-left: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.footercoluna{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.footercoluna a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.footercoluna img {
+    width: 100px;
+    margin-bottom: 10px;
+}
