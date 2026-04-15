@@ -31,20 +31,28 @@ ctx.moveTo(0, 155);
 ctx.lineTo(300, 155);
 ctx.stroke();
 
-// Semicírculos verdes abrindo para CIMA
+// semicirculos verdes abrindo para CIMA
+// circulo verde de cima
 ctx.beginPath();
 ctx.strokeStyle = "green";
 ctx.lineWidth = 1.5;
-ctx.arc(150, 155, 75, Math.PI, 0, false);
+ctx.arc(150, 155, 75, 1.74*Math.PI, 0*Math.PI)
 ctx.stroke();
 
 ctx.beginPath();
 ctx.strokeStyle = "green";
 ctx.lineWidth = 1.5;
-ctx.arc(150, 155, 50, Math.PI, 0, false);
+ctx.arc(150, 155, 75, Math.PI, 1.26 * Math.PI);
 ctx.stroke();
 
-// Linha diagonal azul
+//circulo verde baixo
+ctx.beginPath();
+ctx.strokeStyle = "green";
+ctx.lineWidth = 1.5;
+ctx.arc(150, 155, 50, Math.PI, 2*Math.PI);
+ctx.stroke();
+
+// linha diagonal azul
 ctx.beginPath();
 ctx.strokeStyle = "blue";
 ctx.lineWidth = 1.5;
@@ -52,7 +60,7 @@ ctx.moveTo(50, 50);
 ctx.lineTo(150, 155);
 ctx.stroke();
 
-// Linha diagonal vermelha
+// linha diagonal vermelha
 ctx.beginPath();
 ctx.strokeStyle = "red";
 ctx.lineWidth = 1.5;
@@ -60,7 +68,7 @@ ctx.moveTo(250, 50);
 ctx.lineTo(150, 155);
 ctx.stroke();
 
-// Círculo ciano grande centro superior
+// circulo ciano grande centro superior
 ctx.beginPath();
 ctx.fillStyle = "cyan";
 ctx.arc(150, 128, 14, 0, Math.PI * 2);
@@ -69,7 +77,7 @@ ctx.strokeStyle = "darkblue";
 ctx.lineWidth = 2;
 ctx.stroke();
 
-// Linha vertical verde
+// linha vertical verde
 ctx.beginPath();
 ctx.strokeStyle = "green";
 ctx.lineWidth = 1.5;
@@ -77,12 +85,12 @@ ctx.moveTo(150, 155);
 ctx.lineTo(150, 300);
 ctx.stroke();
 
-// Quadrado vermelho abaixo da linha
+// quadrado vermelho abaixo da linha
 ctx.fillStyle = "red";
 ctx.fillRect(112, 155, 38, 38);
 
 
-// Círculo ciano grande centro inferior
+// circulo ciano grande centro inferior
 ctx.beginPath();
 ctx.fillStyle = "cyan";
 ctx.arc(150, 300, 45, Math.PI, 0, false);
@@ -91,7 +99,8 @@ ctx.strokeStyle = "green";
 ctx.lineWidth = 1.5;
 ctx.stroke();
 
-// Círculos amarelos
+// circulo amarelos
+//lado esquerdo
 ctx.beginPath();
 ctx.fillStyle = "yellow";
 ctx.arc(80, 215, 20, 0, Math.PI * 2);
@@ -100,6 +109,7 @@ ctx.strokeStyle = "green";
 ctx.lineWidth = 1;
 ctx.stroke();
 
+//lado direito
 ctx.beginPath();
 ctx.fillStyle = "yellow";
 ctx.arc(220, 215, 20, 0, Math.PI * 2);
@@ -108,28 +118,27 @@ ctx.strokeStyle = "green";
 ctx.lineWidth = 1;
 ctx.stroke();
 
-// Semicírculos verdes abrindo para BAIXO (abraçando o ciano)
+// semicirculos verdes abrindo para BAIXO perto do ciano
+//circulo verde cima
 ctx.beginPath();
 ctx.strokeStyle = "green";
 ctx.lineWidth = 1.5;
-ctx.arc(150, 300, 80, Math.PI, 0, false);
+ctx.arc(150, 300, 80, Math.PI, 1.5*Math.PI);
 ctx.stroke();
 
+//circulo verde baixo
 ctx.beginPath();
 ctx.strokeStyle = "green";
 ctx.lineWidth = 1.5;
-ctx.arc(150, 300, 60, Math.PI, 0, false);
+ctx.arc(150, 300, 60, 1.5*Math.PI, 0);
 ctx.stroke();
 
-ctx.arc(150, 300, 80, 0, Math.PI, false);
-ctx.arc(150, 300, 60, 0, Math.PI, false);
-
-// Quadrado amarelo inf esquerdo (formato escada)
+// quadrado amarelo inf esquerdo (formato escada)
 ctx.fillStyle = "yellow";
 ctx.fillRect(0, 230, 35, 35);  // parte de cima
 ctx.fillRect(0, 265, 60, 60);  // parte de baixo menor
 
-// Escada preta inf direito
+// escada preta inf direito
 ctx.fillStyle = "black";
 ctx.fillRect(246, 270, 35, 35);
 ctx.fillRect(266, 240, 70, 70);
