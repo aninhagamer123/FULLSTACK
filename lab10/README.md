@@ -97,7 +97,7 @@ O CMD já abre direto na pasta certa! ✅
 
 Roda:
 
-bashnpm install
+npm install E apos
 node server.js
 
 Abre o navegador:
