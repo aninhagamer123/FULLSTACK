@@ -83,3 +83,24 @@ lab10/
 ```json
 { "marca": "string", "modelo": "string", "ano": "number", "qtde_disponivel": "number" }
 ```
+
+DICA DE COMO RODAR O CMD:
+Baixa o projeto do GitHub — clica em "Code" → "Download ZIP" → extrai a pasta
+Abre o CMD — aperta Win + R, digita cmd, Enter
+Entra na pasta — o jeito mais fácil é:
+
+Abre a pasta do projeto no Explorer
+Clica na barra de endereço do Explorer
+Digita cmd e aperta Enter
+O CMD já abre direto na pasta certa! ✅
+
+
+Roda:
+
+bashnpm install
+node server.js
+
+Abre o navegador:
+
+http://localhost
+O truque do passo 3 é o mais fácil, não precisa ficar digitando o caminho! 😊
