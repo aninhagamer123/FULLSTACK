@@ -472,3 +472,5 @@ Verifique se as primeiras linhas do `server.js` são:
 const dns = require('dns');
 dns.setServers(['8.8.8.8', '8.8.4.4']);
 ```
+
+⚠️ Sempre que mudar o server.js, reinicia o servidor com Ctrl+C e node server.js de novo. Para arquivos .ejs não precisa reiniciar!
